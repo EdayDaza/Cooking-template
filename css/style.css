@@ -1,0 +1,751 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+/* font-family: 'Inter', sans-serif; */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+/* --------------------MAIN-CONTAINER-------------------- */
+.main-container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+/* --------------------NAVBAR-------------------- */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 80px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+}
+
+.navbar__logo {
+    width: 110px;
+}
+
+.navbar__menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+    list-style: none;
+}
+
+.navbar__menu a {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: -0.02em;
+    color: #000000;
+}
+
+.navbar__social {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+.navbar__social img {
+    height: 22px;
+}
+
+/* --------------------HEADER-------------------- */
+.header {
+    display: flex;
+    width: 89%;
+    margin: 0 auto;
+    margin-bottom: 160px;
+    position: relative;
+}
+
+.banner {
+    background: #E7FAFE;
+    border-radius: 30px 0px 0px 30px;
+    padding: 50px;
+    width: 50%;
+}
+
+.banner__tittle {
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 77px;
+    letter-spacing: -0.04em;
+    color: #000000;
+    margin-bottom: 24px;
+}
+
+.banner__description {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    color: rgba(0, 0, 0, 0.6);
+    margin-bottom: 30px;
+}
+
+.banner-recipes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 156px;
+    height: 45px;
+    background: #FFFFFF;
+    border-radius: 30px;
+    margin-bottom: 32px;
+}
+
+.banner-recipes__img {
+    width: 24px;
+    margin-right: 13px;
+}
+
+.banner-recipes__type {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: -0.02em;
+    color: #000000;
+}
+
+.details {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 100px;
+}
+
+.details img {
+    height: 24px;
+    margin-right: 10px;
+}
+
+.details p {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: -0.02em;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.details__timer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 139px;
+    height: 40px;
+    background: rgba(0, 0, 0, 0.05);
+    border-radius: 30px;
+}
+
+.details__forkknife {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 119px;
+    height: 40px;
+    background: rgba(0, 0, 0, 0.05);
+    border-radius: 30px;
+}
+
+.autor-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.autor {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.autor__img {
+    height: 50px;
+    margin-right: 16px;
+}
+
+.autor-details {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.autor-details__name {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: -0.02em;
+    color: #000000;
+}
+
+.autor-details__date {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: -0.02em;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.view-recipes {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    background: #000000;
+    border-radius: 16px;
+    padding: 19px 32px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: -0.02em;
+    color: #FFFFFF;
+}
+
+/* ---------------------------------------- */
+.header__sello {
+    height: 150px;
+    position: absolute;
+    top: 50px;
+    left: 46%;
+}
+
+/* ---------------------------------------- */
+.header__img {
+    width: 50%;
+    border-radius: 0px 30px 30px 0px;
+    object-fit: cover;
+}
+
+/* --------------------CATEGORIES-------------------- */
+.categories-container {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    width: 89%;
+    margin: 0 auto;
+    margin-bottom: 183px;
+}
+
+.categories {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.categories__tittle {
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 58px;
+    letter-spacing: -0.04em;
+    color: #000000;
+}
+
+.categories__view {
+    padding: 20px 27px;
+    background: #E7FAFE;
+    border-radius: 16px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: -0.02em;
+    color: #000000;
+    text-decoration: none;
+}
+
+.categories-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    overflow-x: auto;
+}
+
+.categories-content h4 {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    letter-spacing: -0.02em;
+    color: #000000;
+}
+
+.categories-content__item {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+    padding: 0 40px 30px;
+    border-radius: 30px;
+}
+
+.categories-content__item--1 {
+    background: linear-gradient(180deg, rgba(112, 130, 70, 0) 0%, rgba(112, 130, 70, 0.1) 100%)
+}
+
+.categories-content__item--2 {
+    background: linear-gradient(180deg, rgba(108, 198, 63, 0) 0%, rgba(108, 198, 63, 0.1) 100%);
+}
+
+.categories-content__item--3 {
+    background: linear-gradient(180deg, rgba(204, 38, 27, 0) 0%, rgba(204, 38, 27, 0.1) 100%);
+}
+
+.categories-content__item--4 {
+    background: linear-gradient(180deg, rgba(240, 158, 0, 0) 0%, rgba(240, 158, 0, 0.1) 100%);
+}
+
+.categories-content__item--5 {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.05) 100%);
+}
+
+.categories-content__item--6 {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.05) 100%);
+}
+
+/* --------------------RECIPES-------------------- */
+.recipes {
+    display: flex;
+    flex-direction: column;
+    width: 89%;
+    margin: 0 auto;
+    margin-bottom: 143px;
+}
+
+.recipes__tittle {
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 58px;
+    letter-spacing: -0.04em;
+    text-align: center;
+    color: #000000;
+    margin-bottom: 24px;
+}
+
+.recipes__description {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.6);
+    margin-bottom: 96px;
+}
+
+.recipes-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.recipes-card {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    background: linear-gradient(180deg, rgba(231, 249, 253, 0) 0%, #E7F9FD 100%);
+    border-radius: 30px;
+    width: 400px;
+    padding: 0 20px 32px;
+    margin-bottom: 40px;
+}
+
+.recipes-card__img {
+    height: 250px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.recipes-card__tittle {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: -0.04em;
+    color: #000000;
+}
+
+.recipes-details {
+    display: flex;
+    gap: 16px;
+}
+
+.recipes-details img {
+    height: 24px;
+    margin-right: 10px;
+}
+
+.recipes-details p {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: -0.02em;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.recipes-details__timer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.recipes-details__forkknife {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* --------------------LEARNMORE-------------------- */
+.learnmore {
+    display: flex;
+    justify-content: space-between;
+    gap: 44px;
+    width: 89%;
+    margin: 0 auto;
+    margin-bottom: 160px;
+}
+
+.learnmore-content {
+    display: flex;
+    flex-direction: column;
+    padding-top: 169px;
+    width: 50%;
+}
+
+.learnmore-content__tittle {
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 58px;
+    letter-spacing: -0.04em;
+    color: #000000;
+    margin-bottom: 24px;
+}
+
+.learnmore-content__description {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    color: rgba(0, 0, 0, 0.6);
+    margin-bottom: 72px;
+}
+
+.learnmore-content__link {
+    width: max-content;
+    padding: 21px 52px;
+    background: #000000;
+    border-radius: 16px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: -0.02em;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.learnmore__img {
+    width: 50%;
+    object-fit: cover;
+}
+
+/* --------------------INSTAGRAM-------------------- */
+.instagram {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 80px 0px;
+    background: linear-gradient(180deg, rgba(231, 249, 253, 0) 0%, #E7F9FD 100%);
+    margin-bottom: 160px;
+}
+
+.instagram__tittle {
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 58px;
+    text-align: center;
+    letter-spacing: -0.04em;
+    color: #000000;
+    margin-bottom: 24px;
+}
+
+.instagram__description {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.6);
+    margin-bottom: 80px;
+}
+
+.instagram-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    width: 89%;
+    margin: 0 auto;
+    margin-bottom: 80px;
+}
+
+.instagram-content__post {
+    width: 290px;
+}
+
+.instagram-content__post img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.instagram__link {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    background: #000000;
+    border-radius: 16px;
+    padding: 19px 32px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: -0.02em;
+    color: #FFFFFF;
+}
+
+/* --------------------MORERECIPES-------------------- */
+.morerecipes {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    width: 89%;
+    margin: 0 auto;
+    margin-bottom: 160px;
+}
+
+.morerecipes-content {
+    display: flex;
+    align-items: center;
+    gap: 153px;
+}
+
+.morerecipes-content__tittle {
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 58px;
+    letter-spacing: -0.04em;
+    color: #000000;
+}
+
+.morerecipes-content__description {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.morerecipes-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.morerecipes-card {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    justify-content: space-between;
+    width: 290px;
+    margin-bottom: 40px;
+}
+
+.morerecipes-card__img {
+    height: 200px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.morerecipes-card__tittle {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 26px;
+    letter-spacing: -0.04em;
+    color: #000000;
+}
+
+.morerecipes-details {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.morerecipes-details__timer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.morerecipes-details img {
+    height: 24px;
+    margin-right: 10px;
+}
+
+.morerecipes-details p {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: -0.02em;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+/* --------------------SUBSCRIBECARD-------------------- */
+.subscribecard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 89%;
+    min-height: 442px;
+    margin: 0 auto;
+    margin-bottom: 160px;
+    padding: 80px 330px;
+    position: relative;
+}
+
+.subscribecard__background {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+.subscribecard__tittle {
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 58px;
+    letter-spacing: -0.04em;
+    color: #000000;
+    margin-bottom: 24px;
+}
+
+.subscribecard__description {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.6);
+    margin-bottom: 64px;
+}
+
+.subscribecard-form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 480px;
+    height: 80px;
+    background: #FFFFFF;
+    border-radius: 24px;
+    padding: 10px;
+}
+
+.subscribecard-form input {
+    height: 50%;
+    margin-left: 22px;
+    border: none;
+    outline: none;
+    font-weight: 500;
+    font-size: 1.2em;
+    line-height: 17px;
+    letter-spacing: -0.02em;
+    color: rgba(0, 0, 0, 0.4);
+}
+
+.subscribecard-form button {
+    background: #000000;
+    border-radius: 16px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: -0.02em;
+    color: #FFFFFF;
+    padding: 21px 45px;
+    cursor: pointer;
+}
+
+/* --------------------FOOTER-------------------- */
+.footer {
+    display: flex;
+    flex-direction: column;
+    gap: 96px;
+    width: 89%;
+    margin: 0 auto;
+    margin-bottom: 48px;
+}
+
+.footer-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-section__logo {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.footer-section__logo img {
+    width: 110px;
+}
+
+.footer-section__logo p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.footer-section__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+    list-style: none;
+}
+
+.footer-section__nav a {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: -0.02em;
+    color: #000000;
+}
+
+.fotter-section__copy {
+    width: 90%;
+    text-align: center;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+    letter-spacing: -0.02em;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.fotter-section__copy span {
+    color: #FF7967;
+}
+
+.footer-section__social {
+    width: 10%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 40px;
+}
+
+.footer-section__social {
+    height: 22px;
+}
